@@ -34,7 +34,7 @@ elasticsearch.cluster.name=elasticsearch  这个是你的es集群的名字，如
 
 elasticsearch.pool=1   配置多少个连接池，默认为一个，性能需要优化在改进
 
-elasticsearch.scanPackage=com.pingan.haofang  包扫描路径
+elasticsearch.scanPackage=com.dh  包扫描路径
 
 elasticsearch.isScan=no  是否扫描
 elasticsearch.limitSize=100000 每个表最多一次导入多少数据，看你服务器分配。
@@ -58,7 +58,7 @@ Demo如下。
 
 
 添加扫描es的类，加入到spring容器里面
-@ComponentScan(basePackages = {"elasticsearch,com.pingan.haofang"})
+@ComponentScan(basePackages = {"elasticsearch,com.dh"})
 
 
 后面对其增删改都做了封装
